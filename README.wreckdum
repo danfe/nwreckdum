@@ -1,0 +1,24 @@
+wreckdum quake unpacker for linux.
+by Neal Tucker (ntucker@fester.axis.net)
+No copyright.  It's yours.
+
+  usage:
+           wreckdum [<pakfile>] [<outdir>]
+  
+  Expands <pakfile> into its individual components by creating
+  <outdir> and all necessary subdirs and files.
+
+    <pakfile> default is "id1.pak"
+    <outdir> default is "<pakfile>.out"
+
+
+Based on HACK by Greg Alexander (galexand@bluemarble.net)
+differences from HACK:
+
+  most importantly, works on linux
+  no more ui - just unpacks everything
+  retains hierarchical structure by creating directories
+  verifies that the file is a PACK before freaking out on it
+  I'm pretty sure it won't compile on DOS anymore
+  removed lots of magic numbers and other "hackyness". (no offense, Greg :-)
+  more memorable name

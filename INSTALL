@@ -1,0 +1,19 @@
+ _ __ __      _____ ___ ___ _  _____  _   _ __  __
+| '_ \\ \    / / _ \ __/ __| |/ /   \| | | |  \/  |
+| | | |\ \/\/ /|   / _| (__| ' <| |) | |_| | |\/| |  version 0.0.6
+|_| |_| \_/\_/ |_|_\___\___|_|\_\___/ \___/|_|  |_|
+
+nwreckdum -- PACK file manipulator for the Linux console
+by Daniel Reed <n@ml.org>
+based on wreckdum by Neal Tucker <ntucker@fester.axis.net>
+
+To compile nwreckdum, first look through the included Makefile and make
+any changed you see fit. The default CFLAGS are optimized for a 486 or
+higher Intel machine. If this does not match your configuration, try
+removing the "-m486" from the CFLAGS. After the Makefile is configured to
+your liking, just run "make" at the console prompt. This will produce a
+binary named "nwreckdum."
+
+To install, simply cp the nwreckdum binary to /usr/local/bin. No data
+files are used (except for your PACK files!), so the binary is all that's
+necessary.

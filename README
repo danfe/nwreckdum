@@ -1,0 +1,28 @@
+ _ __ __      _____ ___ ___ _  _____  _   _ __  __
+| '_ \\ \    / / _ \ __/ __| |/ /   \| | | |  \/  |
+| | | |\ \/\/ /|   / _| (__| ' <| |) | |_| | |\/| |  version 0.0.6
+|_| |_| \_/\_/ |_|_\___\___|_|\_\___/ \___/|_|  |_|
+
+nwreckdum -- PACK file manipulator for the Linux console
+by Daniel Reed <n@ml.org>
+based on wreckdum by Neal Tucker <ntucker@fester.axis.net>
+
+Usage: nwreckdum [argument ...]
+
+  -c, --create          create PACK instead of extracting
+  -d, --dir=DIR use DIR as the input/output directory
+  -h, --help            display this help
+  -p, --pak=FILE        read FILE for PACK information
+  
+Just running nwreckdum with no arguments will cause it to use "pak0.pak"
+for the PACK file and "pak0/" for the PACK directory. The default
+operation is to extract the PACK file into the PACK directory.
+
+This program and all related articles are distributed under the GNU GPL.
+You are free to distribute this program in any form granted that no charge
+is made for the distribution of this program, its source code, or any
+portions of either.
+
+If you find this program useful, please contact the author and tell him so =)
+Likewise, if you find any problems with nwreckdum, please give as detailed
+a report as possible to the author.
