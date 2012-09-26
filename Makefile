@@ -1,8 +1,8 @@
-CC = gcc
+CC ?= gcc
 
 # Use the first CFLAGS for a highly optimized version, or the second for a
 # debugable version
-CFLAGS = -O6 -funroll-loops -fexpensive-optimizations -m486 -Wall
+#CFLAGS = -O6 -funroll-loops -fexpensive-optimizations -m486 -Wall
 #CFLAGS = -g3 -Wall
 
 # If the following is uncommented, debugging information will be displayed
@@ -17,11 +17,11 @@ OBJ = nwreckdum.o shhopt.o
 
 all: ${OBJ} nwreckdum
 
-.c.o: debdb.h
-	${CC} ${CFLAGS} -o $@	-c $<
+#.c.o: debdb.h
+#	${CC} ${CFLAGS} -o $@ -c $<
 
 nwreckdum: ${OBJ}
-	${CC} ${CFLAGS} -o nwreckdum	${OBJ}
+	${CC} ${CFLAGS} -o nwreckdum ${OBJ}
 
 clean:
 	rm -f ${OBJ}
